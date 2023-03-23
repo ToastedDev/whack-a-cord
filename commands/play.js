@@ -39,7 +39,7 @@ module.exports = {
     rows[randomIndex] = randomRow;
 
     const message = await interaction.reply({
-      content: "⭐ Score: **0**",
+      content: "<:star:1088355271560147025> Score: **0**",
       components: rows,
       fetchReply: true,
     });
@@ -100,7 +100,7 @@ module.exports = {
         rows[randomIndex] = randomRow;
 
         i.update({
-          content: `⭐ Score: **${++score}**`,
+          content: `<:star:1088355271560147025> Score: **${++score}**`,
           components: rows,
         });
 
@@ -123,7 +123,7 @@ module.exports = {
           if (timeout) clearTimeout(timeout);
           if (ended) return;
           interaction.editReply({
-            content: `💀 You selected the wrong cell and died.\n⭐ Your score was **${score}**. Your high score was **${client.highscores.get(
+            content: `💀 You selected the wrong cell and died.\n<:star:1088355271560147025> Your score was **${score}**. Your high score was **${client.highscores.get(
               interaction.user.id
             )}**.`,
             components: [],
@@ -134,7 +134,7 @@ module.exports = {
           if (timeout) clearTimeout(timeout);
           if (ended) return;
           interaction.editReply({
-            content: `💀 You ran out of time.\n⭐ Your score was **${score}**. Your high score was **${client.highscores.get(
+            content: `💀 You ran out of time.\n<:star:1088355271560147025> Your score was **${score}**. Your high score was **${client.highscores.get(
               interaction.user.id
             )}**.`,
             components: [],
